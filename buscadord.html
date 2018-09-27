@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/ico/logo1.ico"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+
+    <title>Bookshelf</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/buscadord.css">
+    
+  </head>
+
+  <body style="background:#0b3c5d;">
+
+    <!-- Barra Superior -->
+    <nav class="navbar navbar-light bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="buscadorl.html"><img src="img/ico/sol.png" width="40px"></a>
+        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" style="color:white;" href="#">Cerrar Sesión</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Barra Inferior -->
+    <div class="w3-bottom" style="z-index:2;">
+      <div class="w3-row w3-large" style="background:#1d2731; color: white;">
+        <div class="w3-col s3">
+          <a href="homed.html" class="w3-button w3-block"><img src="img/ico/home2.png" width="20px"></a>
+        </div>
+        <div class="w3-col s3">
+          <a href="bibliotecad.html" class="w3-button w3-block"><img src="img/ico/libros1.png" width="20px"></a>
+        </div>
+        <div class="w3-col s3">
+          <a href="" class="w3-button w3-block"><img src="img/ico/lupa1.png" width="20px"></a>
+        </div>
+        <div class="w3-col s3">
+          <a href="contactod.html" class="w3-button w3-block"><img src="img/ico/contacto1.png" width="20px"></a>
+        </div>
+      </div>
+    </div>
+
+
+    <form onsubmit="submitFn(this, event);">
+         <div class="search-wrapper">
+              <div class="input-holder">
+                  <input type="text" class="search-input" placeholder="Type to search" />
+                  <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+             </div>
+             <span class="close" onclick="searchToggle(this, event);"></span>
+             <div class="result-container"></div>
+        </div>
+    </form>
+
+
+    <div class="container">
+
+      <div class="row text-center text-lg-left" style="padding-top:230px;">
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Lírica</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Épica o narrativa</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Drama</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Novelas</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Thriller</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Romántica</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Aventura</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Terror</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Ciencia Ficción</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Investigación</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Biográfica</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Infantil</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Autoayuda</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Hogar</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Enciclopedia</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Sociedad</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Deportes</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Cultura</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Educativa</h3></center>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4" style="text-decoration:none;">
+           <center style="background:#535353; padding:10px; border-radius:19px; color:white;"><h3>Tecnología</h3></center>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+        function searchToggle(obj, evt){
+            var container = $(obj).closest('.search-wrapper');
+
+            if(!container.hasClass('active')){
+                  container.addClass('active');
+                  evt.preventDefault();
+            }
+            else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+                  container.removeClass('active');
+                  // clear input
+                  container.find('.search-input').val('');
+                  // clear and hide result container when we press close
+                  container.find('.result-container').fadeOut(100, function(){$(this).empty();});
+            }
+        }
+
+        function submitFn(obj, evt){
+            value = $(obj).find('.search-input').val().trim();
+
+            _html = "Lo sentimos, no poseemos el recurso o genero: ";
+            if(!value.length){
+                _html = "Antes, escriba lo que busca";
+            }
+            else{
+                _html += "<b>" + value + "</b>";
+            }
+
+            $(obj).find('.result-container').html('<span>' + _html + '</span>');
+            $(obj).find('.result-container').fadeIn(100);
+
+            evt.preventDefault();
+        }
+    </script>
+
+
+  </body>
+
+</html>

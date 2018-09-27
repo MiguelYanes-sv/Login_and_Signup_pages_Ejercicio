@@ -1,0 +1,13 @@
+#categoria{
+	display:flex;
+	justify-content:center;
+	align-content:center;
+}
+
+.categ{
+	background: red;
+	width:50%;
+	color:;
+	font-family:;
+	font-size:;
+}
