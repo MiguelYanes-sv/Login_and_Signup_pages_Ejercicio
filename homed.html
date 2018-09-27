@@ -3,6 +3,8 @@
 
   <head>
 
+    <title>Bookshelf</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -11,14 +13,12 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <title>Bookshelf</title>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/thumbnail-gallery.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/carusel.css">
+    <link rel="stylesheet" type="text/css" href="css/carouselbook.css">
   </head>
 
   <body style="background:#0b3c5d;">
@@ -60,89 +60,110 @@
     </div>
 
 
-    <header class="masthead d-flex">
-      <img src="img/aviso.png" width="100%" height="70%">
-    </header>
 
-
-
-    <!-- Page Content -->
-    <!--<div class="container">
-
-      <center><h1 class="my-4 text-center" style="color:white;">Mi Biblioteca</h1></center>
-
-      <div class="row text-center text-lg-left">
-
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <center><img class="img-fluid img-thumbnail" src="img/portada/l1.jpg" width="80%"></center>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <center><img class="img-fluid img-thumbnail" src="img/portada/l2.jpg" width="80%"></center>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <center><img class="img-fluid img-thumbnail" src="img/portada/l3.jpg" width="80%"></center>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <center><img class="img-fluid img-thumbnail" src="img/portada/l4.jpg" width="80%"></center>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <center><img class="img-fluid img-thumbnail" src="img/portada/l5.jpg" width="80%"></center>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <center><img class="img-fluid img-thumbnail" src="img/portada/l6.jpg" width="80%"></center>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <center><img class="img-fluid img-thumbnail" src="img/portada/l7.jpg" width="80%"></center>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <center><img class="img-fluid img-thumbnail" src="img/portada/l8.jpg" width="80%"></center>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <center><img class="img-fluid img-thumbnail" src="img/portada/l9.jpg" width="80%"></center>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <center><img class="img-fluid img-thumbnail" src="img/portada/l10.jpg" width="80%"></center>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <center><img class="img-fluid img-thumbnail" src="img/portada/l11.jpg" width="80%"></center>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <center><img class="img-fluid img-thumbnail" src="img/portada/l12.jpg" width="80%"></center>
-          </a>
-        </div>
-      </div>
-
+    <div style="padding-top:100px;">
+      <center><h1 style="color:white;">!! Bienvenido !!</h1></center>
+      <center><h5 style="color:white;">Estas son las Ultimas Adquisiciones</h5></center>
     </div>
-    <!-- /.container -->
+    <div id="wrapper_bu">
+      <section id="bu1" style="display: flex; justify-content: center; align-items:center; width:100px;">
+        <section>
+          <img src="img/portada/l1.jpg" width="200" height="300">
+        </section>
+      </section>
+
+      <section id="bu2" style="display: flex; justify-content: center; align-content:center; width:100px;">
+        <section>
+          <img src="img/portada/l2.jpg" width="200" height="300">
+        </section>
+      </section>
+
+      <section id="bu3" style="display: flex; justify-content: center; align-content:center; width:100px;">
+        <section>
+          <img src="img/portada/l3.jpg" width="200" height="300">
+        </section>
+      </section>
+
+      <section id="bu4" style="display: flex; justify-content: center; align-content:center; width:100px;">
+        <section>
+          <img src="img/portada/l4.jpg" width="200" height="300">
+        </section>
+      </section>
+
+      <section id="bu5" style="display: flex; justify-content: center; align-content:center; width:100px;">
+        <section>
+          <img src="img/portada/l5.jpg" width="200" height="300">
+        </section>
+      </section>
+    </div>  
 
    
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-46156385-1', 'cssscript.com');
+      ga('send', 'pageview');
+
+    </script>
+    <script>
+        var Conclave=(function(){
+          var buArr =[],arlen;
+          return {
+            init:function(){
+              this.addCN();this.clickReg();
+            },
+            addCN:function(){
+              var buarr=["holder_bu_awayL2","holder_bu_awayL1","holder_bu_center","holder_bu_awayR1","holder_bu_awayR2"];
+              for(var i=1;i<=buarr.length;++i){
+                $("#bu"+i).removeClass().addClass(buarr[i-1]+" holder_bu");
+              }
+            },
+            clickReg:function(){
+              $(".holder_bu").each(function(){
+                buArr.push($(this).attr('class'))
+              });
+              arlen=buArr.length;
+              for(var i=0;i<arlen;++i){
+                buArr[i]=buArr[i].replace(" holder_bu","")
+              };
+              $(".holder_bu").click(function(buid){
+                var me=this,id=this.id||buid,joId=$("#"+id),joCN=joId.attr("class").replace(" holder_bu","");
+                var cpos=buArr.indexOf(joCN),mpos=buArr.indexOf("holder_bu_center");
+                if(cpos!=mpos){
+                    tomove=cpos>mpos?arlen-cpos+mpos:mpos-cpos;
+                    while(tomove){
+                      var t=buArr.shift();
+                      buArr.push(t);
+                      for(var i=1;i<=arlen;++i){
+                        $("#bu"+i).removeClass().addClass(buArr[i-1]+" holder_bu");
+                      }
+                      --tomove;
+                    }
+                }
+              })
+            },
+            auto:function(){
+              for(i=1;i<=1;++i){
+                $(".holder_bu").delay(4000).trigger('click',"bu"+i).delay(4000);
+                console.log("called");
+              }
+            }
+          };
+      })();
+
+      $(document).ready(function(){
+          window['conclave']=Conclave;
+          Conclave.init();
+      })
+    </script>
 
   </body>
 
